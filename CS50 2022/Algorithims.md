@@ -104,6 +104,30 @@ This Function returns
 > >
 > > will return positive
 
+_We Created a file named **names.c**_
+
+```c
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    string names [] { "Bill", "Charlie" , "Fred" , "George" , "Ginny" , "Percy" , "Ron"};
+    for (int i = 0 ; i < 7; i++)
+    {
+        if (name[i] == "Ron")
+        {
+            printf("Found\n");
+            return 0;
+        }
+    }
+    printf("Not Found\n");
+}
+```
+
+![stupid](https://imgur.com/a/LOqTcNb"holl")
+
 # Storing Data in Arrays
 
 # Structs
@@ -123,6 +147,10 @@ This Function returns
 # Merge Sort
 
 # Sort Race
+
+```
+
+```
 
 ```
 
