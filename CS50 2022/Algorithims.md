@@ -53,6 +53,30 @@ Today we'll be focusing on [ Algorithms ](#Algorithms) which solve problems with
 
 # String Comparison
 
+## Name
+
+> strcmp - Compares two strings
+
+```c
+#include <cs50.h>
+#include <string.h>
+
+int strcmp(String S1, String S2);
+
+```
+
+## Description
+
+_This Function compares two strings case-sensitively_
+
+## Return Value
+
+This Function returns
+
+- an `int`less than `0` if `S1` comes before `S2`,
+- `0` if `S1` is the same as `S2`,
+- an `int` greater than `0` if `S1` comes after `S2`.
+
 # Storing Data in Arrays
 
 # Structs
@@ -72,3 +96,7 @@ Today we'll be focusing on [ Algorithms ](#Algorithms) which solve problems with
 # Merge Sort
 
 # Sort Race
+
+```
+
+```
