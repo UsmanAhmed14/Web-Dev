@@ -14,6 +14,7 @@
   - [Description](#description)
   - [Return Value](#return-value)
 - [Storing Data in Arrays](#storing-data-in-arrays)
+  - [Creating our own Person data type](#creating-our-own-person-data-type)
 - [Structs](#structs)
 - [Sorting](#sorting)
 - [Visualizing Sorts](#visualizing-sorts)
@@ -141,6 +142,43 @@ This function compares two or more strings and checks if its [Return Value]( ##R
 
 # Storing Data in Arrays
 
+In `C` we have the ability to invent our own ***data*** ***structures*** or ***data*** ***types***
+- int
+- floats
+
+just like above data types in `C` you can invent your own ***data*** ***types***.
+
+you can make a person data type or a candidate data type in context of elections
+
+
+## Creating our own Person data type
+
+```c
+typedef struct
+{
+    string name;
+    string number;
+}
+person;
+```
+
+`Typedef` is new ***Data***-***Type*** a c keyword that let's you create a new **data** **type**
+
+`Struct` is a keyword that tells the compiler that it is not a simple data type like the `int` or `float` *it* *acutally* *is* *a* ***structure***
+its got some dimensions to it
+- like 2 things in it.
+- or five things in it.
+- or even 50 things inside.
+
+
+`person` the last name in the format is the name you want to assign as the name of the ***data*** ***type*** 
+
+_This is how you invent a data-type_
+
+from now onwards the `compiler` will know that a person data type consists of a name which is string and a number which is a string.
+
+
+you dont have to worry about having multiple arrays ,you can just have an array of people moving forward
 # Structs
 
 # Sorting
