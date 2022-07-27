@@ -10,6 +10,9 @@
 - [Sorting and Searching vs. Just Searching](#sorting-and-searching-vs-just-searching)
 - [Implementing Linear Search](#implementing-linear-search)
 - [String Comparison](#string-comparison)
+  - [Name](#name)
+  - [Description](#description)
+  - [Return Value](#return-value)
 - [Storing Data in Arrays](#storing-data-in-arrays)
 - [Structs](#structs)
 - [Sorting](#sorting)
@@ -126,7 +129,15 @@ int main(void)
 }
 ```
 
-![stupid](https://imgur.com/a/LOqTcNb"holl")
+
+
+we encountered an error but after that we made changes in code by adding `strcmp` function
+
+```c
+if (strcmp(names[i]) == 0)
+```
+
+This function compares two or more strings and checks if its [Return Value]( ##Return-Value ) is equal to zero
 
 # Storing Data in Arrays
 
