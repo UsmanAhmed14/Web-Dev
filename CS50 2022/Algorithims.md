@@ -181,12 +181,67 @@ from now onwards the `compiler` will know that a person data type consists of a 
 you dont have to worry about having multiple arrays ,you can just have an array of people moving forward
 # Structs
 
+
+```c
+person people[2];
+
+people[0].name = "Carter"
+```
+The `.` means go inside that structure and access the varaible called name and give it this value `carter`
+
+
+```c
+#include <cs50.h>
+#include <string.h>
+#include <stdio.h>
+
+typedef struct
+{
+    string name;
+    string number;
+}
+person;
+
+
+int main(void)
+{
+    person people[2];
+    people[0].name = "Carter";
+    people[0].number = "0349-2599904";
+
+    people[1].name = "David";
+    people[1].number = "033o3o93149";
+
+    for (int i = 0; i < 2; i++)
+    {
+        if (strcmp(people[i].name, "David") == 0)
+        {
+            printf("Found %s\n", people[i].number);
+            return 0;
+        }
+    }
+    printf("Not FOund\n");
+    return 1;
+}
+```
+ 
 # Sorting
+
+inside of the blackbox are some algorithms which will sort some numbers
 
 # Visualizing Sorts
 
 # Selection Sort
 
+As the name implies we selected the smallest elements again and again and again working our way from left to right
+
+**pseudocode**
+```
+For i from 0 to N-1
+    Find smallest numbers between numbers[i] and numbers[n-1]
+    Swap smallest numbers with numbers[i]
+```
+    
 # Bubble Sort
 
 # Comparing Sorts
